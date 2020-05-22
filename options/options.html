@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BS.TO Background Settings</title>
+	<script src="options.js"></script>
+</head>
+<body>
+<div>
+<div id="root">
+	<h1>BS.TO Background changer</h1>
+
+	<p>
+		Hintergrundbild ausw&aumlhlen:  <input type="file" id="img-selector" accept=".jpg, .jpeg, .png, .gif">
+	</p>
+
+	<div id="image-div">
+		
+	</div>
+
+	<button id="saveImageButton">Einstellungen speichen</button>
+
+</div>
+</div>
+<style>
+body {
+	font-size: 150%;
+	overflow-y: scroll;
+}
+
+#error-message {
+	color: red;
+}
+
+#notif-message {
+	color: lightseagreen;
+}
+
+#image-preview {
+	height: auto;
+	width: 100%;
+}
+
+#image-div {
+	height: 70%;
+	width: 80%;
+	z-index: 10;
+}
+
+#root {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 900px;
+	height: 95%;
+	
+	
+	bottom: 10px;
+	top: 10px;
+	
+
+	
+	padding-left: 20px;
+	padding-right: 20px;
+	
+	background-color: white;
+}
+</style>
+</body>
+</html>
